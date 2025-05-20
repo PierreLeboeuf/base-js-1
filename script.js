@@ -163,7 +163,7 @@ for (let afficherCompteur = 0; afficherCompteur <= 20; afficherCompteur += 2) {
 // let compteur = 1;
 // let nombres ;
 
-// while (nombres !== 666) {
+// while (nombres !== 999) {
 //  nombres = Math.floor(Math.random() * 1000);
 //  compteur++
 // }
@@ -172,20 +172,16 @@ for (let afficherCompteur = 0; afficherCompteur <= 20; afficherCompteur += 2) {
 // console.log(nombres);
 
 // utilisation de for
+// let nombres;
 
+// for (compteur = 0; compteur <= 100000 ; compteur++) { 
+//   nombres = Math.floor(Math.random() * 1000);
+//   if (nombres === 666) {
+//     break; // Sort de la boucle for lorsque nombres est égal à 666
+//   }
+// }
 
-let compteur = 0;
-let nombres;
-
-for (; ;) { // Boucle for infinie (la condition de fin est vide)
-  nombres = Math.floor(Math.random() * 1000);
-  compteur++;
-  if (nombres === 666) {
-    break; // Sort de la boucle for lorsque nombres est égal à 666
-  }
-}
-
-console.log("Le nombre 666 a été trouvé après", compteur, "tentatives.");
+// console.log("Le nombre 666 a été trouvé après", compteur, "tentatives.");
 
 // Exercice 11
 
@@ -196,5 +192,10 @@ let year = instant.getFullYear();
 let hours = instant.getHours();
 let minutes = instant.getMinutes() ;
 
-//  / instant.getMonth() / instant.getFullYear();
+
 console.log(`Aujourd'hui nous somme le ${day}/${month}/${year} et il est ${hours}:${minutes} `);
+
+const dateT= new Date().toLocaleDateString();
+const hourT = new Date().toLocaleTimeString();
+
+console.log(`Aujourd'hui nous somme le ${dateT} et il est ${hourT} `);
